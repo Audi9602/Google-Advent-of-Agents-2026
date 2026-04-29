@@ -19,7 +19,7 @@ Choose a backend (1, 2): 1
 
 Don't have API Key? Create one in AI Studio: https://aistudio.google.com/apikey
 
-Enter Google API key: AIzaSyCndOjYluTnh7_vWAqU8D3RscSDcvJ6USk
+Enter Google API key: key
 
 Agent created in /content/my_agent:
 - .env
