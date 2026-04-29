@@ -1,0 +1,100 @@
+I used Google Cloud Shell with miniaml setup for this.
+
+Welcome to Cloud Shell! Type "help" to get started, or type "gemini" to try prompting with Gemini CLI.
+To set your Cloud Platform project in this session use `gcloud config set project [PROJECT_ID]`.
+You can view your projects by running `gcloud projects list`.
+cloudshell_open --repo_url "https://github.com/eliasecchig/asp-open-in-cloud-shell" --print_file "open-in-cs" --page "editor" --force_new_clone
+audrijadasguptaadak@cloudshell:~$ cloudshell_open --repo_url "https://github.com/eliasecchig/asp-open-in-cloud-shell" --print_file "open-in-cs" --page "editor" --force_new_clone
+2026/04/29 10:44:29 Cloning https://github.com/eliasecchig/asp-open-in-cloud-shell into /home/audrijadasguptaadak/cloudshell_open/asp-open-in-cloud-shell
+Cloning into '/home/audrijadasguptaadak/cloudshell_open/asp-open-in-cloud-shell'...
+remote: Enumerating objects: 31, done.
+remote: Counting objects: 100% (31/31), done.
+remote: Compressing objects: 100% (21/21), done.
+remote: Total 31 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (31/31), 10.20 KiB | 3.40 MiB/s, done.
+Resolving deltas: 100% (8/8), done.
+2026/04/29 10:44:30 🚀  Welcome to Agent Starter Pack in Cloud Shell!
+
+╭───────────────────────────────────────────────────────────────────────────────── Agent Starter Pack v0.41.3 ──────────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                                                                                                               │
+│  ▄▀▄ █▀▀ █▀▄ │ 📣 Agents CLI is here (goo.gle/agents-cli) — the next evolution of Agent Starter Pack.                                                                                         │
+│  █▀█ ▀▀█ █▀▀ │ → Try it: uvx google-agents-cli setup                                                                                                                                          │
+│  ▀ ▀ ▀▀▀ ▀   │ → Migrate in minutes: https://google.github.io/agents-cli/reference/from-agent-starter-pack/                                                                                   │
+│                                                                                                                                                                                               │
+╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+> Enter a name for your project (my-agent): Google Advent of Code
+Note: Project names are normalized (lowercase, hyphens only) for better compatibility with cloud resources and tools.
+Info: Converting to lowercase for compatibility: 'Google Advent of Code' -> 'google advent of code'
+Note: Project names are normalized (lowercase, hyphens only) for better compatibility with cloud resources and tools.
+Info: Converting to lowercase for compatibility: 'Google Advent of Code' -> 'google advent of code'
+
+> Please select an agent to get started:
+
+  🐍 Python
+     1. adk            Simple ReAct agent
+     2. adk_a2a        ReAct agent with A2A protocol 
+     3. adk_live       Real-time voice & video agent
+     4. agentic_rag    Document Q&A with RAG pipeline
+     5. custom_a2a     Bring your own framework, A2A-ready
+
+  🌐 Other Languages
+     6. adk_go         Go agent with A2A
+     7. adk_java       Java agent with A2A
+     8. adk_ts         TypeScript agent
+
+  🔧 More Options
+     9. Browse         BQ agent analytics, community agents, custom templates
+
+  💡 New: use --bq-analytics to log agent events to BigQuery
+
+Enter the number of your template choice (1): 1
+
+> Please select a deployment target:
+
+  ☁️  Deployment Targets
+     1. agent_engine   Vertex AI managed platform
+     2. cloud_run      Serverless container platform
+     3. gke            Managed Kubernetes (Autopilot)
+     4. none           No Cloud deployment
+
+Enter the number of your deployment target choice (1): 1
+
+> Please select a CI/CD runner:
+
+  🔧 CI/CD Options
+     1. simple               No CI/CD, add later with 'enhance'
+     2. google_cloud_build   Fully managed, GCP-integrated
+     3. github_actions       Workload identity federation
+
+Enter the number of your CI/CD runner choice (1): 1
+
+🌍 Enter GCP region (Gemini uses global endpoint) (us-east1): 1
+> Verifying GCP credentials...
+
+> You are logged in with account: 'default'
+> You are using project: 'Unknown'
+> Do you want to continue? (The CLI will check if Vertex AI is enabled in this project) [Y/skip/edit] (Y): y
+Please select one of the available options
+> Do you want to continue? (The CLI will check if Vertex AI is enabled in this project) [Y/skip/edit] (Y): y
+Please select one of the available options
+> Do you want to continue? (The CLI will check if Vertex AI is enabled in this project) [Y/skip/edit] (Y): Y
+> Testing Vertex AI connection...
+
+> ⚠️  Looks like you are not authenticated with Google Cloud.
+Please run: `gcloud auth login --update-adc`
+Then set your project: `gcloud config set project YOUR_PROJECT_ID`
+> Continuing with template processing...
+
+✅ Success! Your agent project is ready.
+
+📖 Documentation
+   README:    cat google advent of code/README.md
+   Dev Guide: https://goo.gle/asp-dev
+
+💡 Tip
+   Once ready for production, run: uvx agent-starter-pack enhance
+
+🚀 Get Started
+   cd google advent of code && make install && make playground
+audrijadasguptaadak@cloudshell:~/cloudshell_open/asp-open-in-cloud-shell$ 
