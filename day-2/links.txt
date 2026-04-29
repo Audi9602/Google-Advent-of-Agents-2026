@@ -1,0 +1,7 @@
+https://googlecloudplatform.github.io/agent-starter-pack/guide/getting-started.html
+
+https://googlecloudplatform.github.io/agent-starter-pack/agents/overview.html
+
+https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/inference
+
+https://adk.dev/get-started/python/
