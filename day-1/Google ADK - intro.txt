@@ -1,0 +1,68 @@
+LINK: https://google.github.io/adk-docs/
+Lang used: PYTHON
+Commands:
+--install: pip install google-adk
+--create: !adk create my_agent
+OUTPUT:
+Choose a model for the root agent:
+1. gemini-2.5-flash
+2. Other models (fill later)
+Choose model (1, 2): gemini-2.5-flash
+Error: 'gemini-2.5-flash' is not one of '1', '2'.
+Choose a model for the root agent:
+1. gemini-2.5-flash
+2. Other models (fill later)
+Choose model (1, 2): 1
+1. Google AI
+2. Vertex AI
+Choose a backend (1, 2): 1
+
+Don't have API Key? Create one in AI Studio: https://aistudio.google.com/apikey
+
+Enter Google API key: AIzaSyCndOjYluTnh7_vWAqU8D3RscSDcvJ6USk
+
+Agent created in /content/my_agent:
+- .env
+- __init__.py
+- agent.py
+
+--Update agent project:
+from google.adk.agents.llm_agent import Agent
+
+# Mock tool implementation
+def get_current_time(city: str) -> dict:
+    """Returns the current time in a specified city."""
+    return {"status": "success", "city": city, "time": "10:30 AM"}
+
+root_agent = Agent(
+    model='gemini-3-flash-preview',
+    name='root_agent',
+    description="Tells the current time in a specified city.",
+    instruction="You are a helpful assistant that tells the current time in cities. Use the 'get_current_time' tool for this purpose.",
+    tools=[get_current_time],
+)
+
+
+OUTPUT:
+Log setup complete: /tmp/agents_log/agent.20260401_153207.log
+To access latest log: tail -F /tmp/agents_log/agent.latest.log
+/usr/local/lib/python3.12/dist-packages/google/adk/cli/cli.py:204: UserWarning: [EXPERIMENTAL] InMemoryCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  credential_service = InMemoryCredentialService()
+/usr/local/lib/python3.12/dist-packages/google/adk/auth/credential_service/in_memory_credential_service.py:33: UserWarning: [EXPERIMENTAL] BaseCredentialService: This feature is experimental and may change or be removed in future versions without notice. It may introduce breaking changes at any time.
+  super().__init__()
+Running agent root_agent, type exit to exit.
+[user]: Addie
+[root_agent]: "Addie" is a lovely name! Is there something you'd like to know or do with this name? For example:
+
+*   Are you looking for information about someone named Addie?
+*   Are you thinking of names?
+*   Do you want to spell it out?
+*   Are you starting a conversation?
+
+Let me know how I can help!
+[user]: What is the time in Pune now?
+[root_agent]: The current time in Pune, India is **12:20 AM on Tuesday, May 28, 2024**.
+[user]: exit
+
+COLAB LINK: https://colab.research.google.com/drive/1rp7wHrUe5mw9txRst8me08Mfp0-Sxybr?usp=sharing 
+
